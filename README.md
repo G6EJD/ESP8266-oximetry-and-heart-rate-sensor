@@ -10,3 +10,5 @@ As the LED emits light into a person’s finger, the integrated photodetector me
 The result is a display on an ILI9341 TFT of the users blood oxygen levels and pulse rate.
 
 Currrently only the ESP8266 operates with the MAX 3010 library.
+
+(C) D.L.Bird 2017
