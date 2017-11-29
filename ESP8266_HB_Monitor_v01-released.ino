@@ -21,11 +21,11 @@
  * Copyright (C) 2017 Adafruit, All Rights Reserved.
  * 
  * Hardware Connections (Breakoutboard or TFT Display to ESP8266):  
- * Most MAX30105 Breakout Boards have a voltage regulator and can use either 5V or 3.3V, however 5V is ideal.
- * -MAX30105 5V  = 5V (or 3.3V)  
- * -MAX30105 GND = GND  
- * -MAX30105 SDA = D2  
- * -MAX30105 SCL = D1
+ * Most MAX30100 Breakout Boards have a voltage regulator and can use either 5V or 3.3V, however 5V is ideal.
+ * -MAX30100 5V  = 5V (or 3.3V)  
+ * -MAX30100 GND = GND  
+ * -MAX30100 SDA = D2  
+ * -MAX30100 SCL = D1
  * 
  * Display is ILI9341 2.2", 2.4" or 2.8" TFT
  * -ILI9341 CS   = D8
