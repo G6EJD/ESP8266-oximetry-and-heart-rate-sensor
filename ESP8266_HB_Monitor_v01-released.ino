@@ -30,6 +30,7 @@
  * Display is ILI9341 2.2", 2.4" or 2.8" TFT
  * -ILI9341 CS   = D8
  * -ILI9341 MOSI = D7
+ * -ILI9341 D/C  = D3 
  * -ILI9341 RST  = D4
  * -ILI9341 SCK  = D5
  * -ILI9341 Vcc  = 5V
