@@ -24,10 +24,22 @@
  * Most MAX30100 Breakout Boards have a voltage regulator and can use either 5V or 3.3V, however 5V is ideal.
  * -MAX30100 5V  = 5V (or 3.3V)  
  * -MAX30100 GND = GND  
- * -MAX30100 SDA = D2  
- * -MAX30100 SCL = D1
+ * -MAX30100 SDA = D2 // Wemos D1 Mini
+ * -MAX30100 SCL = D1 // Wemos D1 Mini
+ *  or
+ * -MAX30100 SDA = 4  // DFRobot Firebeetle
+ * -MAX30100 SCL = 5  // DFRobot Firebeetle
  * 
- * Display is ILI9341 2.2", 2.4" or 2.8" TFT
+ * DFRobot Firebeetle ESP8266 to Display connections (Display is 2.2", 2.4" or 2.8" TFT ILI9341 SPI Bus)
+ * -ILI9341 CS   = 15
+ * -ILI9341 MOSI = 13
+ * -ILI9341 D/C  = 0
+ * -ILI9341 RST  = 2
+ * -ILI9341 SCK  = 14
+ * -ILI9341 Vcc  = Vin
+ * -LIL9341 Gnd  = Gnd
+ * -ILI9341 LED  = 10
+ * WEMOS D1 Mini to Display connections (Display is ILI9341 2.2", 2.4" or 2.8" TFT ILI9341 SPI Bus)
  * -ILI9341 CS   = D8
  * -ILI9341 MOSI = D7
  * -ILI9341 D/C  = D3 
@@ -49,13 +61,26 @@
 
 MAX30105 particleSensor;
 
+// Comment out the display connections not required by your board choice
+// For the DFRobot Firebeetle use these connections
+#define TFT_DC   0
+#define TFT_CS   15
+#define TFT_MOSI 13
+#define TFT_RST  2
+#define TFT_CLK  14
+#define TFT_LED  10
+// SDA pin       4
+// SCL pin       5
+
 // For the ESP8266 D1 Mini use these connections
-#define TFT_DC   D3
-#define TFT_CS   D8
-#define TFT_MOSI D7
-#define TFT_RST  D4
-#define TFT_CLK  D5
-#define TFT_LED  D0
+//#define TFT_DC   D3
+//#define TFT_CS   D8
+//#define TFT_MOSI D7
+//#define TFT_RST  D4
+//#define TFT_CLK  D5
+//#define TFT_LED  D0
+// SDA_pin       D2
+// SCL_pin       D1
 Adafruit_ILI9341 tft = Adafruit_ILI9341(TFT_CS, TFT_DC, TFT_RST); // Using only hardware SPI for speed
 
 // Assign names to common 16-bit color values:
