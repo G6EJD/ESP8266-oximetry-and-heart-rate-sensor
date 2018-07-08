@@ -56,8 +56,8 @@
 #include <SPI.h>
 #include "Adafruit_GFX.h"
 #include "Adafruit_ILI9341.h"
-#include "MAX30105.h"
-#include "heartRate.h"
+#include "MAX30105.h"  //https://github.com/sparkfun/MAX30105_Particle_Sensor_Breakout
+#include "heartRate.h" //Part of https://github.com/sparkfun/MAX30105_Particle_Sensor_Breakout
 
 MAX30105 particleSensor;
 
